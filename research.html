@@ -336,19 +336,15 @@
     #zobaer-site .cohort-facts .therapy{font-size:1.1rem;padding:0}
     #zobaer-site .cohort-facts span{font-size:1rem;line-height:1.5;color:var(--muted)}
     #zobaer-site .pipeline{grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);gap:8px;padding-top:22px}
-    #zobaer-site .pipeline-step{min-width:0;padding:16px;background:#e7f0fa;border:1px solid #cbdeef;border-radius:10px;gap:8px}
+    #zobaer-site .pipeline-step{min-width:0;padding:16px;background:#e9f5ed;border:1px solid #b8dcca;border-radius:10px;gap:8px}
     /* Distinct soft hues make each study fact and step easy to follow. */
-    #zobaer-site .dataset .cohort-facts>div:nth-child(1),#zobaer-site .dataset .pipeline-step:nth-of-type(1){background:#e7f2fc;border-color:#bfd9ee}
-    #zobaer-site .dataset .cohort-facts>div:nth-child(2),#zobaer-site .dataset .pipeline-step:nth-of-type(2){background:#eef4fa;border-color:#c9dbea}
-    #zobaer-site .dataset .cohort-facts>div:nth-child(3),#zobaer-site .dataset .pipeline-step:nth-of-type(3){background:#faf3e7;border-color:#eadabd}
-    #zobaer-site .dataset .cohort-facts>div:nth-child(4),#zobaer-site .dataset .pipeline-step:nth-of-type(4){background:#f2eff9;border-color:#dcd3eb}
-    #zobaer-site .dataset .pipeline-step:nth-of-type(1) .step-number{background:#004a99}
-    #zobaer-site .dataset .pipeline-step:nth-of-type(2) .step-number{background:#315d82}
-    #zobaer-site .dataset .pipeline-step:nth-of-type(3) .step-number{background:#845927}
-    #zobaer-site .dataset .pipeline-step:nth-of-type(4) .step-number{background:#645186}
+    #zobaer-site .dataset .cohort-facts>div:nth-child(1){background:#e7f2fc;border-color:#bfd9ee}
+    #zobaer-site .dataset .cohort-facts>div:nth-child(2){background:#eef4fa;border-color:#c9dbea}
+    #zobaer-site .dataset .cohort-facts>div:nth-child(3){background:#faf3e7;border-color:#eadabd}
+    #zobaer-site .dataset .cohort-facts>div:nth-child(4){background:#f2eff9;border-color:#dcd3eb}
     #zobaer-site .pipeline-step b{font-size:1.05rem;line-height:1.4;color:var(--ink)}
     #zobaer-site .pipeline-step p{font-size:1rem;line-height:1.55;color:var(--muted)}
-    #zobaer-site .step-number{width:31px;height:31px;background:#004a99;color:white;font-size:.9rem;font-weight:650}
+    #zobaer-site .step-number{width:31px;height:31px;background:#286548;color:white;font-size:.9rem;font-weight:650}
     #zobaer-site .flow-arrow{font-size:1.3rem;color:#3978ad;margin:0}
     #zobaer-site .scan-chip{font-size:.95rem;background:white;border-color:#b4cce3}
     #zobaer-site .dataset-note{margin-top:22px;padding-top:18px;border-color:#cddfec;font-size:1rem;line-height:1.6}
@@ -400,8 +396,7 @@
     /* Five cohort details and five distinct analysis stages. */
     #zobaer-site .cohort-facts{grid-template-columns:repeat(5,minmax(0,1fr))}
     #zobaer-site .pipeline{grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr)}
-    #zobaer-site .dataset .cohort-facts>div:nth-child(5),#zobaer-site .dataset .pipeline-step:nth-of-type(5){background:#e9f1f8;border-color:#c5d9e8}
-    #zobaer-site .dataset .pipeline-step:nth-of-type(5) .step-number{background:#275c80}
+    #zobaer-site .dataset .cohort-facts>div:nth-child(5){background:#e9f1f8;border-color:#c5d9e8}
     @media(max-width:1100px){#zobaer-site .cohort-facts,#zobaer-site .pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}#zobaer-site .flow-arrow{display:none}}
     @media(max-width:520px){#zobaer-site .pipeline{grid-template-columns:minmax(0,1fr)}}
   
@@ -550,7 +545,7 @@
 <div class="themes">
 <article class="theme"><div aria-hidden="true" class="theme-number">01</div><h3>AI-guided quantitative PET measurements</h3><p>Assessing the test–retest repeatability of semi-quantitative and volumetric features extracted from AI-guided lesion segmentations using TRAQinform IQ (AIQ Solutions) and aPROMISE (Exini Diagnostics AB).</p></article>
 <article class="theme"><div aria-hidden="true" class="theme-number">02</div><h3>Radiomic feature stability</h3><p>Investigating the consistency of lesion intensity and texture features, including how statistical transformations of extracted feature values affect repeatability estimates.</p></article>
-<article class="theme"><div aria-hidden="true" class="theme-number">03</div><h3>Physiologic ganglia uptake</h3><p>Examining the test–retest repeatability of peripheral ganglion uptake to better characterize benign findings encountered in PSMA-PET interpretation.</p></article>
+<article class="theme"><div aria-hidden="true" class="theme-number">03</div><h3>Physiologic uptake repeatability</h3><p>Examining the test–retest repeatability of peripheral ganglion uptake to better characterize benign findings encountered in PSMA-PET interpretation.</p></article>
 </div>
 <article aria-labelledby="ongoing-title" class="ongoing">
 <div><p class="status">Ongoing research</p><h3 id="ongoing-title">A measurement-based benchmark for PSMA PET segmentation AI.</h3></div>
