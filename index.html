@@ -487,6 +487,7 @@
     #zobaer-site #research figcaption,#zobaer-site .mip-figure figcaption{text-align:center}
 
     #zobaer-site a.brand{font-size:1.4rem;color:var(--ink)}
+    #zobaer-site .hero .actions a.button{box-sizing:border-box;width:222px;max-width:100%;min-height:50px}
     #zobaer-site .hero a.button{background:#e8f2fb;border-color:#acc8e0;color:#00356e}
     #zobaer-site .hero a.button:hover{background:#d7e9f9;border-color:#82abc9;color:#00356e}
     #zobaer-site .site-nav a{font-size:1rem}
@@ -495,6 +496,41 @@
     #zobaer-site #research .research-intro-title h1{max-width:none;margin:0}
     @media(max-width:760px){#zobaer-site .page-view:not(#home) .page-title{font-size:2rem}}
     @media(max-width:520px){#zobaer-site a.brand{font-size:1.2rem}#zobaer-site .page-view:not(#home) .page-title{font-size:1.85rem}}
+
+/* Homepage research overview */
+#zobaer-site .home-research{background:#fff;padding-block:70px}
+#zobaer-site .home-research-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);column-gap:clamp(32px,4vw,64px);row-gap:30px;align-items:center}
+#zobaer-site .home-research h2{font-size:clamp(2rem,2.7vw,2.8rem);line-height:1.16;max-width:25ch;margin:14px 0 0}
+#zobaer-site .home-research-copy>p{color:#111;font-size:1.05rem;line-height:1.75;margin-top:17px}
+#zobaer-site .home-research-highlights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:25px}
+#zobaer-site .home-research-highlights>div{background:transparent;border:0;border-left:4px solid #004c97;border-radius:0;padding:2px 0 2px 14px}
+#zobaer-site .home-research-highlights>div:nth-child(2){background:transparent;border-left-color:#70518f}
+#zobaer-site .home-research-highlights strong{display:block;color:#092e4a;font-size:1.03rem;line-height:1.3}
+#zobaer-site .home-research-highlights p{margin:7px 0 0;color:#111;font-size:.95rem;line-height:1.5}
+#zobaer-site .home-research-actions{grid-column:1/-1}#zobaer-site .home-research .home-research-link{margin-top:0}
+#zobaer-site .home-workflow{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+#zobaer-site .home-workflow li{min-width:0;background:#f3f7fc;border:1px solid #d0dfea;border-radius:9px;padding:15px 18px;display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center}
+#zobaer-site .home-workflow li:nth-child(2){background:#eff7f3;border-color:#cce1d7}
+#zobaer-site .home-workflow li:nth-child(3){background:#f7f2eb;border-color:#e9dccb}
+#zobaer-site .home-workflow li:nth-child(4){background:#f2eff9;border-color:#ddd4ec}
+#zobaer-site .home-workflow span{grid-row:span 2;color:#004a97;font-weight:700;font-size:1.3rem}
+#zobaer-site .home-workflow strong{font-size:1.03rem;color:#0a304c}
+#zobaer-site .home-workflow small{font-size:.92rem;line-height:1.35;color:#111;margin-top:3px}
+@media(max-width:850px){#zobaer-site .home-research-grid{grid-template-columns:1fr;gap:25px}#zobaer-site .home-workflow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){#zobaer-site .home-research{padding-block:48px}#zobaer-site .home-research-highlights{grid-template-columns:1fr}#zobaer-site .home-workflow{grid-template-columns:1fr}#zobaer-site .home-workflow li{padding:12px 15px}}
+
+/* Compact quick links in the homepage introduction. */
+#zobaer-site .hero-copy .home-profiles{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px;padding:0;border:0}
+#zobaer-site .hero-copy .home-profiles a{display:inline-flex;align-items:center;gap:8px;min-height:41px;padding:8px 13px;background:#fff;border:1px solid #c6d7e7;border-radius:999px;color:#123b61;font-size:.93rem;font-weight:600;line-height:1.2;text-decoration:none;transition:background .18s ease,border-color .18s ease}
+#zobaer-site .hero-copy .home-profiles a:hover,#zobaer-site .hero-copy .home-profiles a:focus-visible{background:#e8f2fb;border-color:#638fb9;text-decoration:none}
+#zobaer-site .hero-copy .quick-icon{display:inline-flex;align-items:center;justify-content:center;flex:none;width:23px;height:23px;border-radius:50%;background:#e9f1fb;color:#084d8e;font-size:.72rem;font-weight:750;letter-spacing:0}
+#zobaer-site .hero-copy .quick-linkedin{background:#0a66c2;color:#fff;font-family:Arial,sans-serif}
+#zobaer-site .hero-copy .quick-github{background:#263b50;color:#fff;font-size:.58rem}
+#zobaer-site .hero-copy .quick-orcid{background:#a6ce39;color:#1d3700;font-size:.67rem}
+#zobaer-site .hero-copy .quick-document{background:#e8f2fb;font-size:.62rem}
+#zobaer-site .hero-copy .quick-utsw{background:#004c97;color:#fff;font-size:.6rem}
+#zobaer-site .hero-copy .quick-email{background:#e9eff6;font-size:.85rem}
+@media(max-width:520px){#zobaer-site .hero-copy .home-profiles{gap:7px}#zobaer-site .hero-copy .home-profiles a{padding:7px 11px;font-size:.9rem}}
 </style>
 <link href="https://zobaerislam.com/" rel="canonical"/></head>
 <body>
@@ -514,22 +550,36 @@
 <section aria-labelledby="hero-title" class="wrap hero">
 <div class="hero-copy">
 <p class="eyebrow">Artificial intelligence · Molecular imaging</p>
-<h1 id="hero-title"><span class="opening">AI-guided quantitative</span> <em><span class="nowrap">PSMA-PET</span> image analysis.</em></h1>
-<p class="hero-intro">I study how artificial intelligence can support <strong>reliable measurements from PSMA-PET images for prostate cancer</strong>. My work focuses on the clinical utility and test–retest repeatability of uptake, volume, and radiomic features, often extracted from AI-guided lesion segmentations.</p>
+<h1 id="hero-title"><span class="opening">Quantitative PSMA-PET imaging</span> <em>for prostate cancer.</em></h1>
+<p class="hero-intro">I study how artificial intelligence can support <strong>quantitative PSMA-PET imaging for prostate cancer</strong>. My work investigates clinically meaningful uptake, volume, and radiomic features, often extracted from AI-guided lesion segmentations, and evaluates how reliably these measurements can be repeated.</p>
 <p class="hero-role"><strong>Zobaer Islam, PhD · Research Instructor</strong>Department of Radiology · Division of Nuclear Medicine<br/>University of Texas Southwestern Medical Center<br/>Dallas, TX, USA</p>
 <div class="actions">
-<a class="button" href="research.html">Explore my research <span aria-hidden="true">↓</span></a>
+<a class="button" href="research.html">Explore my research <span aria-hidden="true">↗</span></a>
 <a class="button" href="publications.html">Publications <span aria-hidden="true">↗</span></a>
 </div>
-<div aria-label="Professional profiles" class="profile-links home-profiles"><a href="https://www.linkedin.com/in/zobaer-islam/" rel="noopener" target="_blank">LinkedIn ↗</a><a href="https://scholar.google.com/citations?user=XSbLiWYAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar ↗</a><a href="https://github.com/Zobaer" rel="noopener" target="_blank">GitHub ↗</a><a href="https://www.researchgate.net/profile/Md-Zobaer-Islam" rel="noopener" target="_blank">ResearchGate ↗</a><a href="https://twitter.com/Zobaer496" rel="noopener" target="_blank">X ↗</a></div>
+<div aria-label="Professional links" class="profile-links home-profiles">
+<a href="https://www.linkedin.com/in/zobaer-islam/" rel="noopener" target="_blank"><span class="quick-icon quick-linkedin" aria-hidden="true">in</span>LinkedIn</a>
+<a href="https://scholar.google.com/citations?user=XSbLiWYAAAAJ&amp;hl=en" rel="noopener" target="_blank"><span class="quick-icon quick-scholar" aria-hidden="true">G</span>Google Scholar</a>
+<a href="https://github.com/Zobaer" rel="noopener" target="_blank"><span class="quick-icon quick-github" aria-hidden="true">&lt;/&gt;</span>GitHub</a>
+<a href="https://orcid.org/0000-0002-5615-0273" rel="noopener" target="_blank"><span class="quick-icon quick-orcid" aria-hidden="true">iD</span>ORCID</a>
+<a href="https://drive.google.com/uc?export=download&amp;id=1p8yNE_f7n6zWCJqWVid_n6Zjax-22ozW" rel="noopener" target="_blank"><span class="quick-icon quick-document" aria-hidden="true">CV</span>Download CV</a>
+<a href="https://profiles.utsouthwestern.edu/profile/241336/md-zobaer-islam.html" rel="noopener" target="_blank"><span class="quick-icon quick-utsw" aria-hidden="true">UT</span>UTSW Faculty</a>
+<a href="mailto:MdZobaer.Islam@UTSouthwestern.edu"><span class="quick-icon quick-email" aria-hidden="true">@</span>Email</a>
+</div>
 </div>
 <figure class="portrait">
 <div class="portrait-frame"><img alt="Portrait of Zobaer Islam" fetchpriority="high" height="600" src="assets/8beaa3d8818f4387b99b.webp" width="480"/></div>
 </figure>
 </section>
 <section aria-labelledby="home-research-title" class="home-research"><div class="wrap home-research-grid">
-<div><span class="eyebrow">The foundation of my current research</span><h2 id="home-research-title">One shared cohort.<br/>Several questions about reliability.</h2><p>Paired PSMA-PET scans of men with metastatic prostate cancer provide a common foundation for my research. I study the test–retest repeatability of quantitative feature families—including measures of uptake, lesion volume, and image texture—extracted from prostate cancer lesions, often using AI-guided segmentation.</p><p>I also explore which features are clinically meaningful, including their potential to predict important outcomes. For measurements to support reliable clinical use, they must be both meaningful and repeatable: understanding measurement variability helps distinguish genuine changes in disease from noise.</p><a class="text-link" href="research.html">Explore the research <span aria-hidden="true">→</span></a></div>
-<figure class="mip-figure"><div class="mip-pair"><div><strong>Test</strong><img alt="Test PSMA-PET maximum-intensity projection with manual lesion outlines" src="assets/a949650a05866ead4b45.jpg"/></div><div><strong>Retest</strong><img alt="Retest PSMA-PET maximum-intensity projection with manual lesion outlines" src="assets/839b7aa2430a23c1ee93.jpg"/></div></div><figcaption>PSMA-PET maximum-intensity projections with manual lesion outlines. The retest image is registered to the test scan.</figcaption></figure>
+<div class="home-research-copy"><span class="eyebrow">Research overview</span><h2 id="home-research-title">From PSMA-PET images to meaningful measurements.</h2>
+<p>PSMA-PET is changing prostate cancer care, from staging high-risk disease and evaluating recurrence to guiding PSMA-targeted treatment. Quantitative imaging can add measurable information about individual lesions and disease across the whole patient.</p>
+<p>I explore how AI-assisted lesion segmentation can support the extraction of uptake, volume, and radiomic features. For these measurements to be useful, we need to understand both their clinical relevance and their reliability across repeat scans.</p>
+<div class="home-research-highlights" aria-label="Research priorities"><div><strong>Clinical relevance</strong><p>Do imaging features reflect disease or help predict meaningful outcomes?</p></div><div><strong>Measurement reliability</strong><p>Can real changes be distinguished from measurement variability?</p></div></div>
+</div>
+<figure class="mip-figure"><div class="mip-pair"><div><strong>Test</strong><img alt="Test PSMA-PET maximum-intensity projection with manual lesion outlines" src="assets/a949650a05866ead4b45.jpg"/></div><div><strong>Retest</strong><img alt="Retest PSMA-PET maximum-intensity projection with manual lesion outlines" src="assets/839b7aa2430a23c1ee93.jpg"/></div></div><figcaption>Paired PSMA-PET scans from men with metastatic prostate cancer underpin studies of measurement repeatability. The retest image is registered to the test scan.</figcaption></figure>
+<ol class="home-workflow" aria-label="Quantitative imaging workflow"><li><span>01</span><strong>Acquire</strong><small>PSMA-PET images</small></li><li><span>02</span><strong>Delineate</strong><small>Lesions, with AI assistance</small></li><li><span>03</span><strong>Extract</strong><small>Quantitative features</small></li><li><span>04</span><strong>Analyze</strong><small>Clinical value and repeatability</small></li></ol>
+<div class="home-research-actions"><a class="text-link home-research-link" href="research.html">Explore the research <span aria-hidden="true">→</span></a></div>
 </div></section>
 <section aria-labelledby="home-publications-title" class="wrap home-selected"><div class="publications-head"><div><h2 id="home-publications-title">Recent Publications</h2></div><a class="text-link" href="publications.html">Full publication list <span aria-hidden="true">→</span></a></div><ol class="publication-list"><li class="publication"><div class="publication-year">2026</div><div><h3><a href="https://jnm.snmjournals.org/content/early/2026/11/12/jnumed.126.272972.abstract" rel="noopener" target="_blank">Test–Retest Repeatability of Peripheral Ganglion Uptake on ¹⁸F-DCFPyL PET/CT: Implications for Interpreting Benign Uptake on PSMA PET</a></h3><p class="publication-meta">Moin A et al., including <strong>Islam MZ</strong> · <i>Journal of Nuclear Medicine</i></p><p class="publication-topic">Physiologic uptake · Quantitative PSMA-PET</p></div></li>
 <li class="publication"><div class="publication-year">2026</div><div><h3><a href="https://atm.amegroups.org/article/view/162058/html" rel="noopener" target="_blank">The role of governance and policy in the rapidly evolving, increasingly AI-driven world of scientific research and publication</a></h3><p class="publication-meta">Rowe SP, Choi WP, Pomper MG, <strong>Islam MZ</strong> · <i>Annals of Translational Medicine</i> · Editorial</p><p class="publication-topic">AI · Scientific publishing</p></div></li>
