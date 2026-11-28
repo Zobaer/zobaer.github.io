@@ -491,7 +491,8 @@
     #zobaer-site #research figcaption,#zobaer-site .mip-figure figcaption{text-align:center}
 
     #zobaer-site a.brand{font-size:1.4rem;color:var(--ink)}
-    #zobaer-site .hero .actions a.button{box-sizing:border-box;width:222px;max-width:100%;min-height:50px}
+    #zobaer-site .hero .actions a.button{box-sizing:border-box;width:190px;max-width:100%;min-height:50px;white-space:nowrap}
+    @media(max-width:520px){#zobaer-site .hero .actions{gap:12px}#zobaer-site .hero .actions a.button{width:calc((100% - 12px)/2);padding-inline:10px;gap:8px}}
     #zobaer-site .hero a.button{background:#e8f2fb;border-color:#acc8e0;color:#00356e}
     #zobaer-site .hero a.button:hover{background:#d7e9f9;border-color:#82abc9;color:#00356e}
     #zobaer-site .site-nav a{font-size:1rem}
